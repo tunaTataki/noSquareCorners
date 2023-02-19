@@ -16,17 +16,24 @@
 
 body {
     margin: 0;
-    height: 2000px;
+    color: rgb(0, 0, 0);
 }
 
 header {
     position: sticky;
     top: 0px;
     border-bottom: solid 5px black;
+    border-bottom-color: rgb(0, 0, 0);
     font-family: "mont", "sans-serif";
     font-size: 1.5rem;
     height: 4rem;
     background: linear-gradient(#D1E80B, #38b7e5);
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
 }
 
 nav {
@@ -51,7 +58,9 @@ nav {
 .woodDiv {
     height: 16rem;
     border-bottom: solid 5px black;
+    border-bottom-color: rgb(0, 0, 0);
     border-top: solid 5px black;
+    border-top-color: rgb(0, 0, 0);
 }
 
 img {
@@ -72,20 +81,18 @@ img {
     background-repeat: no-repeat;
 }
 
-.aboutDiv {
-    background-image: url(../pics/parch/editParch2.png);
-}
-
 p {
     margin: 0;
     padding: 50px 50px 50px 50px;
     font-family: "mont", sans-serif;
     font-size: 2rem;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .aboutDiv {
+    background-image: url(../pics/parch/editParch2.png);
     border-bottom: solid 5px black;
+    border-bottom-color: rgb(0, 0, 0);
 }
 
 #parch3 {
@@ -98,8 +105,4 @@ p {
     grid-template-columns: 200px 200px;
     row-gap: 20px;
     column-gap: 20px;
-}
-
-footer {
-    margin: 50px;
 }
