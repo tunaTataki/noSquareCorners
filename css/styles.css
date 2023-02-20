@@ -102,8 +102,7 @@ p {
     justify-content: space-evenly;
     row-gap: 20px;
     column-gap: 20px;
-    position: relative;
-    bottom: 20px;
+    margin: 40px;
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
@@ -112,14 +111,36 @@ p {
     }
 }
 
-@media (max-width: 600px) and (orientation: portrait) {
+@media (max-width: 600px) {
     p {
         padding: 10px
     }
 }
 
-@media (max-width: 500px) and (orientation: portrait) {
+@media (max-width: 500px) {
     p {
         font-size: 1rem;
     }
+}
+
+@media (orientation: landscape) {
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 950px) {
+    #products {
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-template-columns: 200px 200px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    #products {
+        grid-template-rows: 150px 150px 150px 150px;
+        grid-template-columns: 150px 150px;
+    }
+
 }
