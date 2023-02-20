@@ -104,7 +104,6 @@ p {
     column-gap: 20px;
     position: relative;
     bottom: 20px;
-    margin: auto;
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
