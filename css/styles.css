@@ -30,12 +30,6 @@ header {
     background: linear-gradient(#D1E80B, #38b7e5);
 }
 
-@media (max-width: 768px) {
-    header {
-        font-size: 2rem;
-    }
-}
-
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -105,4 +99,22 @@ p {
     grid-template-columns: 200px 200px;
     row-gap: 20px;
     column-gap: 20px;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .titleDiv > span {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+    p {
+        padding: 10px
+    }
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+    p {
+        font-size: 1rem;
+    }
 }
