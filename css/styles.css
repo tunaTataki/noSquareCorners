@@ -23,12 +23,14 @@ header {
     z-index: 1;
     position: sticky;
     top: 0px;
-    border-bottom: solid 5px black;
+    border-bottom: solid 3px black;
     border-bottom-color: rgb(0, 0, 0);
     font-family: "mont", "sans-serif";
     font-size: 1.5rem;
-    height: 4rem;
-    background: linear-gradient(#D1E80B, #38b7e5);
+    height: 3rem;
+    background: url(../pics/krita/banner2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav {
@@ -42,6 +44,19 @@ nav {
     align-items: center;
 }
 
+.nava {
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}
+
+.a {
+    display: block;
+    position: relative;
+    bottom: 3rem;
+    visibility: hidden;
+}
+
                                 /* main section */
 
 .titleDiv > span {
@@ -51,7 +66,7 @@ nav {
 }
 
 .woodDiv {
-    height: 16rem;
+    height: 12rem;
     border-bottom: solid 5px black;
     border-bottom-color: rgb(0, 0, 0);
     border-top: solid 5px black;
@@ -72,7 +87,7 @@ img {
     font-family: "tusj", "sans-serif";
     font-size: 8rem;
     color: #D1E80B;
-    background-image: url(../pics/forest2.jpg);
+    background-image: url(../pics/forest.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -128,7 +143,6 @@ p {
         grid-template-rows: 200px 200px 200px 200px;
         grid-template-columns: 200px 200px;
     }
-
 }
 
 @media (max-width: 450px) {
@@ -136,5 +150,10 @@ p {
         grid-template-rows: 150px 150px 150px 150px;
         grid-template-columns: 150px 150px;
     }
+}
 
+@media (max-width: 530px) {
+    nav span {
+        font-size: 1rem;
+    }
 }
